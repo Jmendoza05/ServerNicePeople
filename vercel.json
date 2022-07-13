@@ -10,7 +10,10 @@
         {
             "src": "/api/contenido(.*)",
             "dest": "/"
-
         }
-    ]
+    ],
+    ,
+     "rewrites": [{
+    "source": "/api/contenidos/(.*)", "destination": "/api/app.js"
+  }]
 }
